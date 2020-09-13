@@ -1,4 +1,4 @@
-# Time series modeling with seasonal ARIMA, Prophet and deep learning for PM10 level in Cracow, Poland
+# Uni- and multivariate time series modeling with seasonal ARIMA, Prophet and deep learning for PM10 level in Cracow, Poland
 
 In a project I downloaded air pollution data avaiable at [Environmental Protection Inspectorate's](http://powietrze.gios.gov.pl/pjp/archives#) website, sampled every day from January 2000 to December 2018 at different measurement stations in Poland. For modelling I chose PM10 measured in Cracow, particle pollutant with a diameter of 10 micrometres or less, one of the main smog's component. I preprocessed and trasformed data to python DataFrame, made explonatory analysis and feature engineering. Next step was bulding different time-series models and using them to forecast next's year PM10 level - models were trained up to 2017, 2018 was tested. To compare results I used RMSE metrics. 
 
@@ -15,8 +15,10 @@ I used the following pipeline:
 3.	Explonatory Data Analysis, Feature Engineering
 4.	Build and analyse seasonal ARIMA model
 5.	Build and analyse Prophet model
-6.	Build and analyse LSTM and GRU models (in progress)
-7.	Performance analysis, conslusions and lessons learned
+6.  Get weather data and choose external regressors
+7.  Build multivariate seasonal ARIMA and Prophet
+8.	Build and analyse LSTM and GRU models (in progress)
+9.	Performance analysis, conslusions and lessons learned
 
 ## Prerequisites
 
