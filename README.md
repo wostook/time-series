@@ -15,7 +15,7 @@ I used the following pipeline:
 3.	Explonatory Data Analysis, Feature Engineering
 4.	Build and analyse seasonal ARIMA model
 5.	Build and analyse Prophet model
-6.  Get weather data and choose exogenous variables from [link](https://danepubliczne.imgw.pl/)
+6.  Get weather data from [link](https://danepubliczne.imgw.pl/) and choose exogenous variables 
 7.  Build multivariate seasonal ARIMA and Prophet
 8.	Build and analyse LSTM and GRU models (in progress)
 9.	Performance analysis, conslusions and lessons learned
