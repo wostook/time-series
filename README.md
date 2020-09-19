@@ -1,6 +1,6 @@
 # Uni- and multivariate time series modeling with seasonal ARIMA, Prophet and deep learning for PM10 level in Cracow, Poland
 
-In a project I downloaded air pollution data avaiable at [Environmental Protection Inspectorate's](http://powietrze.gios.gov.pl/pjp/archives#) website, sampled every day from January 2001 to December 2018 at different measurement stations in Poland. For modelling I chose PM10 measured in Cracow, particle pollutant with a diameter of 10 micrometres or less, one of the main smog's component. I preprocessed and trasformed data to python DataFrame, made explonatory analysis and feature engineering. Next step was bulding different time-series models and using them to forecast next's year PM10 level - models were trained up to June of 2018, remainig 6 months of 2018 was used for testing. The next stage was getting historical weather data to introduce external regressors and run multivariate modeling. It was scraped from the [Polish Meteorolgical Institite](https://danepubliczne.imgw.pl/). To compare results I used RMSE metrics. 
+In a project I downloaded air pollution data avaiable at [Environmental Protection Inspectorate's](http://powietrze.gios.gov.pl/pjp/archives#) website, sampled every day from January 2001 to December 2018 at different measurement stations in Poland. For modelling I chose PM10 measured in Cracow, particle pollutant with a diameter of 10 micrometres or less, one of the main smog's component. I preprocessed and trasformed data to python DataFrame, made exploratory analysis and feature engineering. Next step was bulding different time-series models and using them to forecast next's year PM10 level - models were trained up to June of 2018, remaining 6 months of 2018 were used for testing. The next stage was getting historical weather data to incorporate exogenous variables and run multivariate modeling. It was scraped from the [Polish Meteorolgical Institite](https://danepubliczne.imgw.pl/). To compare results I used RMSE metrics. 
 
 ## Motivation 
 
@@ -10,12 +10,12 @@ Deteriorating air quality is a real threat for everyone's health. I lived 5 year
 
 I used the following pipeline:
 
-1.	Download zip files for years 2000-2018 from [link](http://powietrze.gios.gov.pl/pjp/archives#) and extract excel workbooks
+1.	Download zip files for years 2001-2018 from [link](http://powietrze.gios.gov.pl/pjp/archives#) and extract excel workbooks
 2.	Extract, transform and load PM10 data into python DataFrame
 3.	Explonatory Data Analysis, Feature Engineering
 4.	Build and analyse seasonal ARIMA model
 5.	Build and analyse Prophet model
-6.  Get weather data and choose external regressors
+6.  Get weather data and choose exogenous variables from [link](https://danepubliczne.imgw.pl/)
 7.  Build multivariate seasonal ARIMA and Prophet
 8.	Build and analyse LSTM and GRU models (in progress)
 9.	Performance analysis, conslusions and lessons learned
