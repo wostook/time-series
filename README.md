@@ -12,7 +12,7 @@ I used the following pipeline:
 
 1.	Download zip files for years 2001-2018 from [link](http://powietrze.gios.gov.pl/pjp/archives#) and extract excel workbooks
 2.	Extract, transform and load PM10 data into python DataFrame
-3.	Explonatory Data Analysis, Feature Engineering
+3.	Exploratory Data Analysis, Feature Engineering
 4.	Build and analyse seasonal ARIMA model
 5.	Build and analyse Prophet model
 6.  Get weather data from [link](https://danepubliczne.imgw.pl/) and choose exogenous variables 
